@@ -4,15 +4,7 @@ This project implements and benchmarks five foundational BLAS routines (AXPY, DO
 
 ## Project Structure
 
-Each routine is organized in its own directory:
-BLAS/
-├── AXPY/
-├── DOT/
-├── SCAL/
-├── GER/
-├── TRSV/
-
-
+Each routine is organized in its own directory.
 Each subdirectory contains:
 - `pe_program.csl`: the kernel implementation
 - `layout.csl`: spatial mapping to PEs
