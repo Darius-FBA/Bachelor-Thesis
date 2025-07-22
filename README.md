@@ -17,11 +17,11 @@ Shared timing infrastructure is imported via `syncpe.csl` and `synclayout.csl`.
 Each routine can be compiled using the `cslc` compiler provided in the SDK. Example (for AXPY):
 
 ```bash
-$ cslc layout.csl \
-  --fabric-dims=11,3 \
-  --fabric-offsets=4,1 \
-  --params=N:500,width:10,N_PER_PE:50 \
-  --memcpy --channels=1 \
+$ cslc layout.csl 
+  --fabric-dims=11,3 
+  --fabric-offsets=4,1 
+  --params=N:500,width:10,N_PER_PE:50 
+  --memcpy --channels=1 
   -o out
 ```
 ## Running the Simulation
